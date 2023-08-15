@@ -23,7 +23,8 @@ def main():
         if any(filter_string  in caption["text"] for caption in value["captions"])
     }
     len_nf_f_data = len(filtered_data)
-    with open(f'{channel}_filtered.json', 'w') as fp:
+    channel_name = re.sub('\W+','', f'{channel}_{filter_string}')
+    with open(f'{channel_name}_filtered.json', 'w') as fp:
         json.dump(filtered_data, fp, indent=4)
     print(f'Fenton Filtered:{len_nf_f_data}')
 
