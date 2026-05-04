@@ -1,0 +1,5 @@
+yt-dlp
+demucs
+pydub
+youtube-transcript-api
+youtube-channel-transcript-api

@@ -3,3 +3,13 @@
 ################################################################################
 
 /.vs
+# Commonly ignored items (adjust as needed)
+node_modules/
+.pip/
+venv/
+__pycache/
+**.bat, **.ps1
+.bak
+/__pycache__
+separated/htdemucs/
+separated/htdemucs_6s/
